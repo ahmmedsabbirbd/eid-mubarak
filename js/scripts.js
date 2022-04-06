@@ -14,8 +14,7 @@
         })}/*** Mousewheel */const fullWidth = document.querySelector('.body');const eidCard = document.querySelectorAll('.eid-card');eidCard[0].classList.add('scrollUp', 'scrollUp');if(fullWidth){function scroolDown(){if(event.wheelDelta>=0){eidCard[0].classList.add('scrollUp','scrollUp');eidCard[0].classList.remove('scrollDown','scrollDown')}else{eidCard[0].classList.add('scrollDown','scrollDown');eidCard[0].classList.remove('scrollUp','scrollUp')}}fullWidth.addEventListener('mousewheel',scroolDown)} 
     jquerySwipeHandler.handleSwipe("body", [
         jquerySwipeHandler.SWIPE_LEFT, jquerySwipeHandler.SWIPE_RIGHT, jquerySwipeHandler.SWIPE_DOWN, jquerySwipeHandler.SWIPE_UP, jquerySwipeHandler.CLICK
-    ], function (direction) { 
-        console.log(direction);
+    ], function (direction) {  
     if ( direction == "SWIPE_UP" ) {eidCard[0].classList.add('scrollUp', 'scrollDown');eidCard[0].classList.remove('scrollUp', 'scrollUp');} else if ( direction == "SWIPE_DOWN" ) {eidCard[0].classList.add('scrollUp', 'scrollUp'); eidCard[0].classList.remove('scrollDown', 'scrollDown'); }});const load = document.querySelector("#load"); 
     window.addEventListener('load', (event) => {
         load.parentElement.removeChild(load);
